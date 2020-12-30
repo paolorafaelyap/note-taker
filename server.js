@@ -34,7 +34,7 @@ app.get("/notes", function (req,res) {
 app.get("/api/notes/", function (req,res) {
   readFileAsync(path.join(__dirname, "./db/db.json"), "utf8")
     .then(function (data) {
-        return res.json(JSON.parse(data));
+        return res.json(JSON.parse(data)); 
     });
 });
 
